@@ -18,3 +18,5 @@ Config.PaycheckInterval = 15 * 60000
 
 Config.EnableDebug = false
 Config.MaxWeight = 40 -- the max inventory weight without backpack
+
+---- Made by Junior https://github.com/xJuniior

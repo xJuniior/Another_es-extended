@@ -143,7 +143,7 @@ function ESX.Table.Join(t, sep)
 	return str
 end
 
--- Credit: https://stackoverflow.com/a/15706820
+-- Credit: https://github.com/xJuniior
 -- Description: sort function for pairs
 function ESX.Table.Sort(t, order)
 	-- collect the keys

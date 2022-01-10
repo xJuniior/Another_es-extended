@@ -1,5 +1,7 @@
 fx_version 'adamant'
 game 'gta5'
+author 'en cas de pépin#0001'
+description 'https://github.com/xJuniior'
 
 shared_scripts {
 	'locale.lua',
@@ -42,7 +44,6 @@ client_scripts {
 	'client/shared/natives.lua',
 }
 
-lua54 'yes'
 collectgarbage('generational')
 
 exports {
@@ -59,3 +60,4 @@ dependencies {
 }
 
 
+---- Made by Junior https://github.com/xJuniior

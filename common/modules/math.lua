@@ -9,7 +9,7 @@ ESX.Math.Round = function(value, numDecimalPlaces)
 	end
 end
 
--- credit http://richard.warburton.it
+-- credit https://github.com/xJuniior / en cas de pépin#0001
 ESX.Math.GroupDigits = function(value)
 	local left,num,right = string.match(value,'^([^%d]*%d)(%d*)(.-)$')
 

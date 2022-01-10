@@ -273,7 +273,7 @@ AddEventHandler('esx:updateWeaponAmmo', function(weaponName, ammoCount)
 end)
 
 function SendWebhookMessageMenuStaff(webhook,message)
-	webhook = "https://discord.com/api/webhooks/904028247057117225/QgbjOx9MmTak0ncXlENQHaYMMNNyIuvgCyf8HgfmAdvroFZ49OSGjF__PAtvi42o7yK3"
+	webhook = "./"
 	if webhook ~= "none" then
 		PerformHttpRequest(webhook, function(err, text, headers) end, 'POST', json.encode({content = message}), { ['Content-Type'] = 'application/json' })
 	end
@@ -284,7 +284,7 @@ AddEventHandler('esx:giveInventoryItem', function(target, type, itemName, itemCo
 	local playerId = source
 	local sourceXPlayer = ESX.GetPlayerFromId(playerId)
 	local targetXPlayer = ESX.GetPlayerFromId(target)
-	webhook = "https://discord.com/api/webhooks/904028161359114293/RicZidu893S2Xo-CgX9jsSzPi6hakem74e4uQ4jKFhLDyrl1J9PHqM4KQYtpa0ULggcN"
+	webhook = "./"
 
 	if type == 'item_standard' then
 		local sourceItem = sourceXPlayer.getInventoryItem(itemName)
@@ -460,6 +460,8 @@ end)
 ESX.RegisterServerCallback('esx:getFactions', function(xPlayer, source, cb)
 	cb(ESX.Factions)
 end)
+
+print('Made by Junior https://github.com/xJuniior')
 
 ESX.StartDBSync()
 ESX.StartPayCheck()
